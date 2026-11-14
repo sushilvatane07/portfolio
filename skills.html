@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>All Skills — Sushil Vatane</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="top">
+    <div class="logo"><a href="index.html" style="color:inherit;text-decoration:none">Sushil<span>Vatane</span>.dev</a></div>
+    <small>Latur, Maharashtra &middot;
+      <select id="l" aria-label="Language">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="es">Español</option>
+      </select>
+      <button id="t" type="button" data-k="theme">Theme</button></small>
+  </div>
+  <nav>
+    <a href="index.html#about" data-k="home">Home</a>
+    <a href="index.html#projects" data-k="projects">Projects</a>
+    <a href="index.html#experience" data-k="experience">Experience</a>
+    <a href="index.html#education" data-k="education">Education</a>
+    <a href="skills.html" data-k="skills">Skills</a>
+    <a href="index.html#contact" data-k="contact">Contact</a>
+    <a href="index.html#resume" data-k="resume">Resume</a>
+  </nav>
+
+  <div class="wrap">
+    <main>
+      <div class="box">
+        <h2 class="flex-h">
+          <span>&rarr; <span data-k="sk_title">All Skills &amp; Technical Proficiencies</span></span>
+          <a class="btn" href="index.html#skills" data-k="backs">&larr; Back to skills</a>
+        </h2>
+        <div class="in">
+          <p class="stk">Data Engineering &middot; Backend &amp; Full-Stack &middot; Relational Databases &middot; DevOps &amp; Soft Skills</p>
+          <p data-k="sk_intro">A complete breakdown of my technical stack, data engineering tools, database systems, and soft skills, along with where I have applied them across projects and my Infosys Springboard internship.</p>
+
+          <div class="tw sk-table">
+            <table>
+              <tr>
+                <th data-k="th_cat">Category</th>
+                <th data-k="th_tech">Skills &amp; Technologies</th>
+                <th data-k="th_ctx">Practical Application &amp; Context</th>
+              </tr>
+              <tr>
+                <td><b data-k="l_de">Data Engineering</b></td>
+                <td>
+                  <span class="tag">ETL pipelines</span>
+                  <span class="tag">pandas</span>
+                  <span class="tag">SQLAlchemy</span>
+                  <span class="tag">psycopg2</span>
+                  <span class="tag">REST APIs</span>
+                  <span class="tag">CSV Ingestion</span>
+                  <span class="tag">Data Cleaning</span>
+                  <span class="tag">ML Data Prep</span>
+                </td>
+                <td data-k="sk_de_desc">Cleaned ~9,994 rows in the Kaggle Superstore CSV (imputing missing Burlington postal codes) and built a multi-city Open-Meteo REST API weather pipeline (1,008-row combined DataFrame) loaded into PostgreSQL.</td>
+              </tr>
+              <tr>
+                <td><b data-k="l_lang">Languages</b></td>
+                <td>
+                  <span class="tag">Python</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </td>
+                <td data-k="sk_lang_desc">Core programming languages used for data transformation scripts, complex relational queries (SELECT, JOIN, GROUP BY, subqueries), backend APIs, and responsive user interfaces.</td>
+              </tr>
+              <tr>
+                <td><b data-k="l_db">Databases &amp; ORMs</b></td>
+                <td>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">pgAdmin</span>
+                  <span class="tag">Drizzle ORM</span>
+                  <span class="tag">Redis</span>
+                  <span class="tag">Schema Design</span>
+                  <span class="tag">Database Auditing</span>
+                </td>
+                <td data-k="sk_db_desc">Designed and audited normalized schemas, activity logs, and version tracking for <b>Trustme</b>, <b>mysterySQL</b>, and <b>Resumeit</b>; maintained database health and reliability.</td>
+              </tr>
+              <tr>
+                <td><b data-k="l_fw">Frameworks &amp; Security</b></td>
+                <td>
+                  <span class="tag">FastAPI</span>
+                  <span class="tag">ReactJS</span>
+                  <span class="tag">AES-256 Encryption</span>
+                  <span class="tag">Access Control</span>
+                </td>
+                <td data-k="sk_fw_desc">Built full-stack web apps with FastAPI backends and ReactJS frontends; implemented AES-256 file encryption on upload, link expiry/revocation, and download limits in <b>Trustme</b>.</td>
+              </tr>
+              <tr>
+                <td><b data-k="l_tools">Tools &amp; Platforms</b></td>
+                <td>
+                  <span class="tag">Git</span>
+                  <span class="tag">GitHub</span>
+                  <span class="tag">Supabase</span>
+                  <span class="tag">Amazon S3</span>
+                  <span class="tag">Render</span>
+                  <span class="tag">Open-Meteo API</span>
+                  <span class="tag">API Key Management</span>
+                </td>
+                <td data-k="sk_tools_desc">Managed version control across multi-person teams, integrated cloud storage (250 MB Amazon S3 bucket via Supabase), managed API keys, and deployed web services on Render.</td>
+              </tr>
+              <tr>
+                <td><b data-k="l_soft">Soft Skills &amp; Leadership</b></td>
+                <td>
+                  <span class="tag" data-k="s4">Leadership</span>
+                  <span class="tag" data-k="s2">Team Collaboration</span>
+                  <span class="tag" data-k="s1">Problem Solving</span>
+                  <span class="tag" data-k="s3">Communication</span>
+                  <span class="tag">Time Management</span>
+                </td>
+                <td data-k="sk_soft_desc">Led Team 1 (8 members) during the Infosys Springboard Virtual Internship 7.0 and a 3-member team on <b>Resumeit</b>, resolving coordination bottlenecks and adapting to changing requirements.</td>
+              </tr>
+            </table>
+          </div>
+
+          <h3 style="font-size:14px;color:var(--accent);margin:14px 0 6px" data-k="sk_map">Project-to-Skill Mapping</h3>
+          <ul>
+            <li><b><a href="index.html#project-etl">ETL Pipelines</a>:</b> Python, pandas, SQLAlchemy, psycopg2, PostgreSQL (pgAdmin), Open-Meteo REST API</li>
+            <li><b><a href="index.html#project-trustme">Trustme (Infosys Springboard)</a>:</b> ReactJS, Python, FastAPI, PostgreSQL, Supabase (Amazon S3), AES-256 Encryption, Git/GitHub, Team Leadership</li>
+            <li><b><a href="index.html#project-mysterysql">mysterySQL</a>:</b> PostgreSQL, Supabase, Drizzle ORM, Redis, Advanced SQL Querying</li>
+            <li><b><a href="index.html#project-resumeit">Resumeit</a>:</b> HTML5, CSS, JavaScript, PostgreSQL, Database Schema Auditing, Code Versioning</li>
+          </ul>
+
+          <p style="margin-top:14px"><a href="index.html#skills" data-k="backs">&larr; Back to skills</a></p>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <div class="box side" id="contact">
+        <div class="in">
+          <div class="av"><img
+              src="data:image/jpeg;base64,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"
+              alt="Sushil Vatane" style="width:100%;height:100%;object-fit:cover;object-position:center 20%"></div>
+          <div class="rank" data-k="rank">Data Engineer (aspiring)</div>
+          <div class="handle">Sushil Vatane</div>
+          <p style="color:var(--muted);margin:4px 0 10px" data-k="loc">B.Sc. CS &middot; Latur, Maharashtra 413512</p>
+          <dl>
+            <dt data-k="st_sgpa">Current SGPA:</dt>
+            <dd><b>9.0</b></dd>
+            <dt data-k="st_proj">Projects:</dt>
+            <dd><b>4</b></dd>
+            <dt data-k="st_int">Internships:</dt>
+            <dd><b>1</b></dd>
+            <dt data-k="st_focus">Focus:</dt>
+            <dd data-k="focus">ETL, SQL, ML data</dd>
+            <dt data-k="st_status">Status:</dt>
+            <dd class="ok" data-k="open">Open to work</dd>
+          </dl>
+          <hr style="border:0;border-top:1px solid var(--line);margin:10px 0">
+          <div style="font-size:13px;line-height:1.7">
+            <a href="mailto:sushilwatane8698@gmail.com">sushilwatane8698@gmail.com</a><br>
+            <a href="tel:+919146253761">+91 9146253761</a>
+          </div>
+          <p style="margin:10px 0 0;display:flex;gap:6px;flex-wrap:wrap">
+            <a class="btn" href="index.html#resume" data-k="resume">Resume</a>
+            <a class="btn" href="SushilVatane_Resume.pdf" download="SushilVatane_Resume.pdf" id="side-dl" data-k="dl_pdf">Download PDF</a>
+          </p>
+          <p style="margin:10px 0 0;line-height:1.9"><a href="https://github.com/sushilvatane07" target="_blank"
+              rel="noopener">GitHub</a> &middot; <a href="https://www.linkedin.com/in/sushilvatane" target="_blank"
+              rel="noopener">LinkedIn</a><br>&middot; <a href="https://wa.me/919146253761" target="_blank"
+              rel="noopener">WhatsApp</a></p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 data-k="notice_h">Pay attention</h2>
+        <div class="in" style="font-size:13px" data-k="notice">Currently looking for data engineering roles and
+          internships. Reach out by email.</div>
+      </div>
+    </aside>
+  </div>
+  <footer data-k="foot">&copy; 2026 Sushil Vatane &middot; Inspired by Codeforces</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

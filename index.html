@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sushil Vatane — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="top">
+    <div class="logo">Sushil<span>Vatane</span>.dev</div>
+    <small>Latur, Maharashtra &middot;
+      <select id="l" aria-label="Language">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="es">Español</option>
+      </select>
+      <button id="t" type="button" data-k="theme">Theme</button></small>
+  </div>
+  <nav class="active">
+    <a href="#about" data-k="home">Home</a>
+    <a href="#projects" data-k="projects">Projects</a>
+    <a href="#experience" data-k="experience">Experience</a>
+    <a href="#education" data-k="education">Education</a>
+    <a href="#skills" data-k="skills">Skills</a>
+    <a href="#contact" data-k="contact">Contact</a>
+    <a href="#resume" data-k="resume">Resume</a>
+  </nav>
+  <div class="wrap">
+    <main>
+      <div class="box" id="detail" style="display:none"></div>
+      <div class="box" id="about">
+        <h2>&rarr; <span data-k="h_about">About</span></h2>
+        <div class="in">
+          <p data-k="about1">Computer Science student specializing in <b>data engineering</b>. I build ETL pipelines
+            with Python, pandas, SQL and PostgreSQL, ingest data from CSV files and REST APIs, and design database
+            schemas for full-stack apps built with FastAPI.</p>
+          <p data-k="about2">I led a team during the Infosys Springboard virtual internship, and I’m interested in
+            machine learning and preparing clean, structured data for ML models.</p>
+        </div>
+      </div>
+
+      <div class="box" id="projects">
+        <h2>&rarr; <span data-k="h_proj">Projects (Status)</span></h2>
+        <div class="tw">
+          <table>
+            <tr>
+              <th>#</th>
+              <th data-k="th_prob">Project</th>
+              <th data-k="th_stack">Language / Stack</th>
+              <th data-k="th_verdict">Details</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><b>ETL Pipelines</b><br><span data-k="d4">Data engineering pipelines: Kaggle Superstore CSV (about
+                  9,994 rows) cleaned with pandas and loaded into PostgreSQL, then a live-API pipeline pulling
+                  Open-Meteo weather data for six Maharashtra cities (1,008-row combined table).</span></td>
+              <td>Python, pandas, SQLAlchemy, PostgreSQL, Open-Meteo API</td>
+              <td><a class="btn" href="#project-etl" data-k="view">View</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><b>Trustme</b><br><span data-k="d2">Secure file-sharing platform: encryption on upload, cloud storage
+                  on Supabase (Amazon S3, 250 MB), link revoke &amp; expiry, receiver-email sharing, download limits, and full activity logging.</span></td>
+              <td>ReactJS, Python, FastAPI, PostgreSQL, Supabase</td>
+              <td><a class="btn" href="#project-trustme" data-k="view">View</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><b>mysterySQL</b><br><span data-k="d3">Interactive murder-mystery game where players run SQL queries
+                  to find the killer. Progressively harder clues, multiple valid query paths.</span></td>
+              <td>PostgreSQL, Supabase, Drizzle ORM, Redis</td>
+              <td><a class="btn" href="#project-mysterysql" data-k="view">View</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><b>Resumeit</b><br><span data-k="d1">Web application for creating ATS-friendly resumes. College project assigned by the HOD; led a 3-member team focusing on the database and frontend, schema design/auditing, code versioning, and tracking multiple resume versions.</span></td>
+              <td>HTML, CSS, JavaScript, PostgreSQL</td>
+              <td><a class="btn" href="#project-resumeit" data-k="view">View</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="box" id="experience">
+        <h2>&rarr; <span data-k="h_exp">Experience</span><a class="btn" href="#experience-details"
+            data-k="more" style="margin-left:8px">View more</a></h2>
+        <div class="in">
+          <b>Infosys Springboard Virtual Internship 7.0</b> &mdash; <span data-k="intern">Intern</span> <span
+            style="color:var(--muted)">(15 July 2026 – 20 Sep 2026)</span> 
+          <ul>
+            <li data-k="e1">Led Team 1 (8 members) on the project "Intelligent Encrypted File Sharing and Digital Collaboration Management Platform" (Trustme), focusing on the database, schema, activity logs, version control and the frontend.</li>
+            <li data-k="e2">Integrated and managed API keys, and maintained database health and reliability throughout the project.</li>
+            <li data-k="e3">Gained hands-on experience resolving team coordination challenges and adapting quickly under changing project requirements.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box" id="education">
+        <h2>&rarr; <span data-k="h_edu">Education</span></h2>
+        <div class="tw">
+          <table>
+            <tr>
+              <th data-k="th_year">Year</th>
+              <th data-k="th_prog">Programme</th>
+              <th data-k="th_res">Result</th>
+            </tr>
+            <tr>
+              <td>2024&ndash;2027</td>
+              <td>B.Sc. Computer Science (NEP), SRTM University, Nanded<br><span style="color:var(--muted)"
+                  data-k="y3">Third year in progress</span></td>
+              <td data-k="sgpa">SGPA 9.0 (Y2), 8.0 (Y1)</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>HSC, Maharashtra State Board &mdash; DPM Kallam</td>
+              <td>61.33%</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>SSC, Maharashtra State Board &mdash; RSCMV A. Shirpura</td>
+              <td>88.80%</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="box" id="skills">
+        <h2 class="flex-h">
+          <span>&rarr; <span data-k="h_skills">Skills (Problem Tags)</span></span>
+          <a class="btn" href="skills.html" data-k="more">View more</a>
+        </h2>
+        <div class="in">
+          <p><b data-k="l_lang">Languages:</b><br><span class="tag">Python</span><span class="tag">SQL</span><span
+              class="tag">Java</span><span class="tag">HTML5</span><span class="tag">CSS</span><span
+              class="tag">JavaScript</span></p>
+          <p><b data-k="l_fw">Frameworks:</b><br><span class="tag">FastAPI</span><span class="tag">ReactJS</span></p>
+          <p><b data-k="l_db">Databases:</b><br><span class="tag">PostgreSQL</span><span class="tag">MySQL</span></p>
+          <p><b data-k="l_de">Data Engineering:</b><br><span class="tag">ETL pipelines</span><span class="tag">pandas</span><span
+              class="tag">SQLAlchemy</span><span class="tag">REST APIs</span></p>
+          <p><b data-k="l_tools">Tools &amp; Platforms:</b><br><span class="tag">Git</span><span
+              class="tag">GitHub</span><span class="tag">Supabase</span><span class="tag">Render</span></p>
+          <p><b data-k="l_soft">Soft skills:</b><br><span class="tag" data-k="s1">Problem Solving</span><span
+              class="tag" data-k="s2">Team Collaboration</span><span class="tag" data-k="s3">Communication</span><span
+              class="tag" data-k="s4">Leadership</span></p>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <div class="box side" id="contact">
+        <div class="in">
+          <div class="av"><img
+              src="520.png"
+              alt="Sushil Vatane" style="width:100%;height:100%;object-fit:cover;object-position:center 20%"></div>
+          <div class="rank" data-k="rank">Data Engineer (aspiring)</div>
+          <div class="handle">Sushil Vatane</div>
+          <p style="color:var(--muted);margin:4px 0 10px" data-k="loc">B.Sc. CS &middot; Latur, Maharashtra 413512</p>
+          <dl>
+            <dt data-k="st_sgpa">Current SGPA:</dt>
+            <dd><b>9.0</b></dd>
+            <dt data-k="st_proj">Projects:</dt>
+            <dd><b>4</b></dd>
+            <dt data-k="st_int">Internships:</dt>
+            <dd><b>1</b></dd>
+            <dt data-k="st_focus">Focus:</dt>
+            <dd data-k="focus">ETL, SQL, ML data</dd>
+            <dt data-k="st_status">Status:</dt>
+            <dd class="ok" data-k="open">Open to work</dd>
+          </dl>
+          <hr style="border:0;border-top:1px solid var(--line);margin:10px 0">
+          <div style="font-size:13px;line-height:1.7">
+            <a href="mailto:sushilwatane8698@gmail.com">sushilwatane8698@gmail.com</a><br>
+            <a href="tel:+919146253761">+91 9146253761</a>
+          </div>
+          <p style="margin:10px 0 0;display:flex;gap:6px;flex-wrap:wrap">
+            <a class="btn" href="#resume" data-k="resume">Resume</a>
+            <a class="btn" href="SushilVatane_Resume.pdf" download="SushilVatane_Resume.pdf" id="side-dl" data-k="dl_pdf">Download PDF</a>
+          </p>
+          <p style="margin:10px 0 0;line-height:1.9"><a href="https://github.com/sushilvatane07" target="_blank"
+              rel="noopener">GitHub</a> &middot; <a href="https://www.linkedin.com/in/sushilvatane" target="_blank"
+              rel="noopener">LinkedIn</a> &middot; <a href="https://wa.me/919146253761" target="_blank"
+              rel="noopener">WhatsApp</a></p>
+        </div>
+      </div>
+      <div class="box">
+        <h2 data-k="notice_h">Pay attention</h2>
+        <div class="in" style="font-size:13px" data-k="notice">Currently looking for data engineering roles and
+          internships. Reach out by email.</div>
+      </div>
+    </aside>
+  </div>
+  <footer data-k="foot">&copy; 2026 Sushil Vatane &middot; Inspired by Codeforces</footer>
+  <script>
+  // Disable browser scroll restoration
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
+  // Start page from the top
+  window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+  });
+</script>
+  <script src="script.js"></script>
+</body>
+
+</html>
