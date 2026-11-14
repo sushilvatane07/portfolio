@@ -346,6 +346,7 @@ function route(sc) {
   var h = location.hash.slice(1),
       p = P[h],
       d = document.getElementById("detail");
+  if (!d) return;
   document.querySelectorAll("main>.box").forEach(function (b) {
     if (b !== d) b.style.display = p ? "none" : "";
   });
@@ -405,9 +406,22 @@ window.addEventListener("hashchange", function () {
 });
 route();
 
-document.getElementById("t").onclick = function () {
-  var r = document.documentElement,
-      d = matchMedia("(prefers-color-scheme: dark)").matches;
-  var curTheme = r.getAttribute("data-theme") || (d ? "dark" : "light");
-  r.setAttribute("data-theme", curTheme === "dark" ? "light" : "dark");
+var themeToggle = document.getElementById("t"),
+    root = document.documentElement,
+    savedTheme;
+try {
+  savedTheme = localStorage.getItem("theme");
+} catch (x) {}
+if (savedTheme === "light" || savedTheme === "dark") {
+  root.setAttribute("data-theme", savedTheme);
+}
+
+themeToggle.onclick = function () {
+  var d = matchMedia("(prefers-color-scheme: dark)").matches,
+      curTheme = root.getAttribute("data-theme") || (d ? "dark" : "light"),
+      nextTheme = curTheme === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try {
+    localStorage.setItem("theme", nextTheme);
+  } catch (x) {}
 };
